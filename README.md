@@ -46,7 +46,7 @@ ConspiraSee tackles polarization without resorting to censorship—providing tho
 
 Run the application in CLI mode to analyze a single post by providing command-line arguments:
 
-```python main.py --title "Your post title" --body "Your post body content" --bot mixture```
+```ConspiraSee --title "Your post title" --body "Your post body content" --bot mixture```
 
 #### Arguments:
 - --title: The title of the claim.
@@ -84,6 +84,54 @@ Our team of specialized bots is here to deliver tailored responses:
 
 Each bot comes with a default model (currently “mistral”) to ensure sharp and thoughtful responses based on your post’s title and content.
 
+## Installation & Setup Instructions
+
+Follow these steps to get ConspiraSee up and running:
+1. Clone the Repository
+
+```git clone https://github.com/yourusername/ConspiraSee.git
+cd ConspiraSee```
+
+2. Install Dependencies
+Install the required Python packages using the provided requirements.txt:
+
+```pip install -r requirements.txt```
+
+
+3. Configuration Details
+ConspiraSee uses several environment variables for configuration, especially for Reddit API access. Create a .env file in the root directory with the following content:
+
+##### Reddit API Credentials
+REDDIT_CLIENT_ID=your_reddit_client_id
+REDDIT_CLIENT_SECRET=your_reddit_client_secret
+REDDIT_USERNAME=your_reddit_username
+REDDIT_PASSWORD=your_reddit_password
+REDDIT_USER_AGENT=ConspiraSeeBot/0.1 by your_reddit_username
+
+##### Other configurations
+FLASK_ENV=development
+SECRET_KEY=your_secret_key_here
+
+Replace the placeholder values with your actual credentials and desired settings.
+
+4. Run the Application
+Depending on your usage, you can run the application in different modes:
+  - CLI Mode:
+To analyze a single post, use:
+
+```ConspiraSee --title "Your post title" --body "Your post body content" --bot MythBustingScientist```
+
+  - Agentic Mode:
+This mode streams posts from target subreddits. Make sure your Reddit credentials are correctly set in the .env file, then run:
+
+```ConspiraSee --mode agentic```
+
+
+  - Web Interface:
+Start the Flask server to access the interactive web interface.
+Then, open your browser and navigate to 127.0.0.1 to begin using the web interface.
+
+By following these steps, you should have ConspiraSee installed, configured, and ready for analysis. Enjoy exploring the project!
 
 ## License
 
