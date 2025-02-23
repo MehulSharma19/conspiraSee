@@ -17,6 +17,23 @@ ConspiraSee is an automated text analysis tool designed to detect, classify, and
 #### Keywords:
 Responsible AI, Conspiracy Theories, Misinformation, Disinformation, Counter-Narratives, Generative AI
 
+## Demo
+
+__CLI Mode__
+<p>
+<img src="templates/static/images/cli-video.gif">
+</p>
+
+__Web Interface__
+<p>
+<img src="templates/static/images/web-video.gif">
+</p>
+
+__Agentic Mode__
+<p>
+<img src="templates/static/images/agentic-video.gif">
+</p>
+
 ## Problem:  
 Modern social media—and even our own thinking—often forces us into binary choices: good/bad, true/false. This oversimplification fuels polarization and creates a perfect playground for conspiracy theories.
 - Polarization Pitfall: Conspiracies thrive in echo chambers, amplified by algorithms that favor fringe ideas.
