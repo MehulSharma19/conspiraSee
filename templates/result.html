@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block body %}
+  <h1>Analysis Result</h1>
+  <div class="result-box">
+    <p><strong>Your Query:</strong></p>
+    <p>{{ request.form.text_input }}</p>
+  </div>
+  <div class="result-box">
+    <p><strong>Bot Response:</strong></p>
+    <p>{{ result }}</p>
+  </div>
+  <a class="btn btn-secondary" href="{{ url_for('home') }}">Go back</a>
+{% endblock %}

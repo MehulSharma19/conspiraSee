@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block body %}
+  <h1>ConspiraSee</h1>
+  <form action="{{ url_for('analyze') }}" method="POST">
+    <div class="form-group">
+      <label for="text_input"></label>
+      <textarea
+        class="form-control"
+        id="text_input"
+        name="text_input"
+        rows="4"
+        placeholder="Type your query..."
+      ></textarea>
+    </div>
+    <div class="form-group">
+      <label for="bot_choice">Choose your conspiracy debunker</label>
+      <select class="form-control" id="bot_choice" name="bot_choice">
+        <option value="mixture">mixture (auto-detect)</option>
+        <option value="MythBustingScientist">MythBustingScientist</option>
+        <option value="SourceDissector">SourceDissector</option>
+        <option value="HistoricalEcho">HistoricalEcho</option>
+        <option value="ParodyAnalogy">ParodyAnalogy</option>
+        <option value="SocraticQuestion">SocraticQuestion</option>
+      </select>
+    </div>
+    <button type="submit" class="btn">Analyze</button>
+  </form>
+{% endblock %}
