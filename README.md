@@ -2,6 +2,8 @@
 
 ConspiraSee is an automated text analysis tool designed to detect, classify, and respond to submissions related to conspiracies, misinformation, and related content.  Designed for Reddit posts, it leverages a team of specialized bots and an AI agent to analyze and counter misinformation in real time.
 
+This project was, originally, made in our participation of [BrickHack 2025](https://brickhack11.devpost.com).
+
 ## Table of Contents
 - [Problem](#problem)
 - [Why it Works](#why-it-works)
